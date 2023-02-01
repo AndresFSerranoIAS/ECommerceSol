@@ -1,0 +1,37 @@
+<div class="card-top container-fluid ">
+    <div class="container d-flex">
+        <div class="item">
+            <a>
+                <img src="https://prestamarketing.com/351-home_default/modulo-limitar-el-numero-maximo-de-productos-por-pedido-prestashop.jpg">
+                <h6>Todos los productos</h6>
+            </a>
+    
+        </div>
+        <div class="item">
+
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100">
+                <h6>Ropa varia</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100">
+                <h6>Electrónica</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+            <div class="card col-md-3">
+                <img style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;max-width: 100ch;" src="{{item.image}}">
+                <h5>{{item.title}}</h5>
+                <p></p>
+                <p></p>
+            </div>
+        </ng-container>
+    </div>
+</div>
